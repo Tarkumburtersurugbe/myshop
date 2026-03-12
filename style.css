@@ -1,0 +1,86 @@
+body{
+font-family:Arial;
+margin:0;
+background: powderblue;
+
+}
+
+
+
+/* #loginPage{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:#2c3e50;
+}
+
+.login-box{
+background:white;
+padding:30px;
+width:300px;
+border-radius:10px;
+text-align:center;
+}
+
+.login-box input{
+width:90%;
+padding:10px;
+margin:10px;
+}
+
+.login-box button{
+padding:10px 20px;
+background:#3498db;
+color:white;
+border:none;
+cursor:pointer;
+} */
+
+
+ 
+
+header{
+background:#222;
+color:white;
+padding:15px;
+display:flex;
+justify-content:space-between;
+
+}
+.products{
+display:flex;
+gap:20px;
+padding:20px;
+flex-wrap:wrap;
+}
+
+.product{
+background:white;
+padding:15px;
+border-radius:10px;
+width:200px;
+text-align:center;
+}
+
+.product button{
+background:#27ae60;
+border:none;
+color:white;
+padding:8px 12px;
+cursor:pointer;
+}
+
+  #order-btn{
+    background-color: #2734ae;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+  }
+  #order-btn-hover{
+    background-color: #5b27ae;
+  }
+
