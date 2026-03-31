@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> UgbeEnterprice</title>
+    <title> UgbeEnterprise</title>
 <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
@@ -14,8 +14,10 @@
 <header>
 
 <h1>My Online Shop</h1>
+ <!-- cart: <span  id="itemlistadd">0</span></div> -->
 
 <div>🛒 Cart: <span id="cartCount">0</span></div>
+<div>Total: $<span id="cartTotal">0</span></div>
 
 </header>
 
@@ -24,69 +26,75 @@
 <div class="product">
 <h3>Headphones</h3>
 <p>$50</p>
-<button onclick="addCart()">Add to Cart</button>
+<img src="photo/alexunder-hess-bWZAPKm0zZE-unsplash (1).jpg" alt="Headphones">
+<button onclick="addCart('Headphones', 'photo/alexunder-hess-bWZAPKm0zZE-unsplash (1).jpg', 50)">Add to Cart</button>
 </div>
 
 <div class="product">
 <h3>Shoes</h3>
 <p>$80</p>
-<button onclick="addCart()">Add to Cart</button>
+<img src="photo/safeimagekit-resized-img-3--1000x1000.jpg" alt="Shoes">
+<button onclick="addCart('Shoes', 'photo/safeimagekit-resized-img-3--1000x1000.jpg', 80)">Add to Cart</button>
 </div>
 
 <div class="product">
 <h3>Watch</h3>
 <p>$120</p>
-<button onclick="addCart()">Add to Cart</button>
+<img src="photo/OIP (4).webp" alt="Watch">
+<button onclick="addCart('Watch', 'photo/OIP (4).webp', 120)">Add to Cart</button>
 </div>
 
 <div class="product">
 <h3>Phone</h3>
 <p>$500</p>
-<button onclick="addCart()">Add to Cart</button>
+<img src="photo/OIP.webp" alt="Phone">
+<button onclick="addCart('Phone', 'photo/OIP.webp', 500)">Add to Cart</button>
 
- 
 </div>
 
 <div class="product">
     <h3>Charger</h3>
     <p>$5</p>
-    <button onclick="addCart()">Add to cart</button>
-
+    <img src="photo/51tKgJyDgML._SL1496_.jpg" alt="Charger">
+    <button onclick="addCart('Charger', 'photo/51tKgJyDgML._SL1496_.jpg', 5)">Add to Cart</button>
 </div>
+
 <div class="product">
     <h3>Earpod</h3>
     <p>$10</p>
-    <button onclick="addCart()">Add to cart</button>
-</div>
-<div class="product">
-    <h3>Earpice</h3>
-    <p>$5</p>
-    <button onclick="addCart()">Add to cart</button>
-    
+    <img src="photo/b90swwe8kvzvk2brlbt6.png" alt="Earpod">
+    <button onclick="addCart('Earpod', 'photo/b90swwe8kvzvk2brlbt6.png', 10)">Add to Cart</button>
 </div>
 
 <div class="product">
-    <h3>bags</h3>
+    <h3>Bags</h3>
     <p>$35</p>
-    <button onclick="addCart()">Add to cart</button>
-
+    <img src="photo/OIP (3).webp" alt="Bags">
+    <button onclick="addCart('Bags', 'photo/OIP (3).webp', 35)">Add to Cart</button>
 </div>
+
 <div class="product">
-    <h3>powerbabk</h3>
+    <h3>Powerbank</h3>
     <p>$20</p>
-    <button onclick="addCart()">Add to Cart</button>
+    <img src="photo/powerbank.jpg" alt="Powerbank">
+    <button onclick="addCart('Powerbank', 'photo/powerbank.jpg', 20)">Add to Cart</button>
 </div>
+
 <div class="product">
-    <h3>press Iron</h3>
+    <h3>Press Iron</h3>
     <p>$19</p>
-    <button onclick="addCart()">Add to Cart</button>
-</div>
- <button id="order-btn">order now</button>
-   
+    <img src="photo/OIP (2).webp" alt="Press Iron">
+    <button onclick="addCart('Press Iron', 'photo/OIP (2).webp', 19)">Add to Cart</button>
 </div>
 
 </div>
- <script src="index.js" ></script> 
+
+<button id="order-btn">Order now</button>
+<div class="cart">
+  <ul id="cart-items"></ul>
+</div>
+
+<script src="index.js"></script> 
     
 </body>
-</html>
+</html> 
